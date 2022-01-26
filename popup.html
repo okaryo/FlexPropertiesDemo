@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>FlexPropertiesDemo</title>
+    <link rel="stylesheet" href="popup.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+  </head>
+
+  <body>
+    <h2>Flex Properties Demo</h2>
+    <div class="flex-property-operation-container">
+      <div>
+        <h4>flex-direction</h4>
+        <div class="property-value-container">
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="flex-direction_row" class="flex-direction" type="radio" name="flex-direction" value="row"  checked="true">
+            <div class="state p-success-o">
+                <label for="flex-direction_row">row</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="flex-direction_row-reverse" class="flex-direction" type="radio" name="flex-direction" value="row-reverse">
+            <div class="state p-success-o">
+                <label for="flex-direction_row-reverse">row-reverse</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="flex-direction_column" class="flex-direction" type="radio" name="flex-direction" value="column">
+            <div class="state p-success-o">
+                <label for="flex-direction_column">column</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="flex-direction_column-reverse" class="flex-direction" type="radio" name="flex-direction" value="column-reverse">
+            <div class="state p-success-o">
+                <label for="flex-direction_column-reverse">column-reverse</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>flex-wrap</h4>
+        <div class="property-value-container">
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="flex-wrap_nowrap" class="flex-wrap" type="radio" name="flex-wrap" value="nowrap" checked="true">
+            <div class="state p-success-o">
+              <label for="flex-wrap_nowrap">nowrap</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="flex-wrap_wrap" class="flex-wrap" type="radio" name="flex-wrap" value="wrap">
+            <div class="state p-success-o">
+              <label for="flex-wrap_wrap">wrap</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="flex-wrap_wrap-reverse" class="flex-wrap" type="radio" name="flex-wrap" value="wrap-reverse">
+            <div class="state p-success-o">
+              <label for="flex-wrap_wrap-reverse">wrap-reverse</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>justify-content</h4>
+        <div class="property-value-container">
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="justify-content_flex-start" class="justify-content" type="radio" name="justify-content" value="flex-start" checked="true">
+            <div class="state p-success-o">
+              <label for="justify-content_flex-start">flex-start</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="justify-content_flex-end" class="justify-content" type="radio" name="justify-content" value="flex-end">
+            <div class="state p-success-o">
+              <label for="justify-content_flex-end">flex-end</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="justify-content_center" class="justify-content" type="radio" name="justify-content" value="center">
+            <div class="state p-success-o">
+              <label for="justify-content_center">center</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="justify-content_space-between" class="justify-content" type="radio" name="justify-content" value="space-between">
+            <div class="state p-success-o">
+              <label for="justify-content_space-between">space-between</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="justify-content_space-around" class="justify-content" type="radio" name="justify-content" value="space-around">
+            <div class="state p-success-o">
+              <label for="justify-content_space-around">space-around</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>align-items</h4>
+        <div class="property-value-container">
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-items_stretch" class="align-items" type="radio" name="align-items" value="stretch" checked="true">
+            <div class="state p-success-o">
+              <label for="align-items_stretch">stretch</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-items_flex-start" class="align-items" type="radio" name="align-items" value="flex-start">
+            <div class="state p-success-o">
+              <label for="align-items_flex-start">flex-start</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-items_flex-end" class="align-items" type="radio" name="align-items" value="flex-end">
+            <div class="state p-success-o">
+              <label for="align-items_flex-end">flex-end</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-items_center" class="align-items" type="radio" name="align-items" value="center">
+            <div class="state p-success-o">
+              <label for="align-items_center">center</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-items_baseline" class="align-items" type="radio" name="align-items" value="baseline">
+            <div class="state p-success-o">
+              <label for="align-items_baseline">baseline</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>align-content</h4>
+        <div class="property-value-container">
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-content_stretch" class="align-content" type="radio" name="align-content" value="stretch" checked="true">
+            <div class="state p-success-o">
+              <label for="align-content_stretch">stretch</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-content_flex-start" class="align-content" type="radio" name="align-content" value="flex-start">
+            <div class="state p-success-o">
+              <label for="align-content_flex-start">flex-start</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-content_flex-end" class="align-content" type="radio" name="align-content" value="flex-end">
+            <div class="state p-success-o">
+              <label for="align-content_flex-end">flex-end</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-content_center" class="align-content" type="radio" name="align-content" value="center">
+            <div class="state p-success-o">
+              <label for="align-content_center">center</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-content_space-between" class="align-content" type="radio" name="align-content" value="space-between">
+            <div class="state p-success-o">
+              <label for="align-content_space-between">space-between</label>
+            </div>
+          </div>
+          <div class="property-value_box pretty p-default p-curve">
+            <input id="align-content_space-around" class="align-content" type="radio" name="align-content" value="space-around">
+            <div class="state p-success-o">
+              <label for="align-content_space-around">space-around</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="child-operation-container">
+      <button id="add-child-button">Add Child</button>
+      <button id="remove-child-button">Remove Child</button>
+      <p id="child-width-text">child width:<i id="child-width-value">12</i>%</p>
+      <input id="child-width-range" type="range" min="0" max="100" step="1" value="12">
+    </div>
+    <div id="flex-parent">
+      <div class="flex-children">1</div>
+      <div class="flex-children">2</div>
+      <div class="flex-children">3</div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
